@@ -1,23 +1,14 @@
-import logo from './logo.svg';
+import { Button } from '@mui/material';
+import { Route } from 'react-router-dom';
 import './App.css';
+import ChatsPage from './Pages/ChatsPage';
+import Homepage from './Pages/Homepage';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Route path='/' component={Homepage} exact />
+      <Route path='/chats' component={ChatsPage} />
     </div>
   );
 }
