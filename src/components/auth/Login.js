@@ -20,7 +20,7 @@ const Login = () => {
     e.preventDefault();
     console.log(email, password);
   };
-  
+
   return (
     <VStack spacing={5}>
       <FormControl>
@@ -49,6 +49,9 @@ const Login = () => {
       </FormControl>
       <Button type="submit" colorScheme="blue" w="100%" onClick={handleSubmit}>
         Login
+      </Button>
+      <Button colorScheme="red" w="100%">
+        Guest User
       </Button>
     </VStack>
   );
