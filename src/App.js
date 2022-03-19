@@ -1,8 +1,7 @@
-import { Button } from '@mui/material';
 import { Route } from 'react-router-dom';
 import './App.css';
-import ChatsPage from './Pages/ChatsPage';
-import Homepage from './Pages/Homepage';
+import ChatsPage from './pages/ChatsPage';
+import Homepage from './pages/Homepage';
 
 function App() {
   return (
